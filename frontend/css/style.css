@@ -1,0 +1,32 @@
+body{
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: azure;
+
+}
+h1{
+
+}
+#collec{
+    box-sizing: border-box;
+    border : 1px solid black;
+    width: 100%;
+    background-color: aliceblue;
+
+}
+
+.tab{
+    height: 50px;
+    width: 25%;
+    border : 1px solid black;
+}
+input[type=submit]{
+    background-color: aquamarine;
+    color: black;
+    padding: 10px 10px;
+    text-decoration: none;
+    width: 100%
+}
+footer{
+    float: left;
+}
