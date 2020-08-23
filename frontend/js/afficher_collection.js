@@ -1,3 +1,4 @@
+"use strict"
 function affichColle(id) { 
     let xhr =new XMLHttpRequest(); //nouvelle requête
     xhr.open("get","http://localhost/collec", true);  //demande la liste des collections

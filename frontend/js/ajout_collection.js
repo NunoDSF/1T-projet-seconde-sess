@@ -1,3 +1,4 @@
+"use strict"
 function ajout() { 
     let formu = document.getElementById('ajout');   //récup du formulaire
     let selectElmt = document.getElementById("categ");  //récup des catégories

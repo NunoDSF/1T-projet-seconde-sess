@@ -1,3 +1,4 @@
+"use strict"
 function Categ(id) {  
     let xhr =new XMLHttpRequest(); 
     xhr.open("get","http://localhost/categorie", true);  //va chercher lq liste de toutes les catégories
