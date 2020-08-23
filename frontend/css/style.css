@@ -4,8 +4,13 @@ body{
     background-color: azure;
 
 }
+header{
+    border: solid red;
+}
 h1{
-
+    float: inline-end;
+    width: 75%;
+    font-family: Comic Sans MS;
 }
 #collec{
     box-sizing: border-box;
@@ -28,5 +33,9 @@ input[type=submit]{
     width: 100%
 }
 footer{
+    position: relative;
+    top: 200px;
+}
+.ban{
     float: left;
 }
