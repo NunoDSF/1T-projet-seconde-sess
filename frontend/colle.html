@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Collection</title>
+        <script src="js/recupID.js"></script>
+        <script src="js/affichEntite.js"></script>
+        <script src="js/ajoutEntit.js"></script>
+        <script src="js/calCul.js"></script>
+    </head>
+    <body onload="affichEnt('enti')">
+        <header>
+           <img id="ban" src="/img/banniere.png" alt="Bannière">
+           <h1>Éléments de la collection</h1>
+        </header>
+        <section>
+            <ul id="enti">
+            </ul>
+        </section>
+        <section>
+            <form method="get" onsubmit="return ajout()" id="ajout">
+                <input type="text" name="nom" id="nom" required >
+                <input type="text" name="description" id="des">
+                <input type="submit" value="Ajouter">
+            </form>
+        </section>
+        <footer>
+            <p>de Sousa Ferreira Nuno</p>
+            <button onclick="calCul()">calcul </button>
+            <p id="calc"></p>
+        </footer>
+    </body>
+</html>

@@ -1,62 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Index</title>
-</head>
-<body>
-    <header>
-        <h1></h1>
-    </header>
-    <section >
-        <table id="collec">
-            <thead>
-                <tr>
-                    <th class="tab">Nom</th>
-                    <th class="tab">Description</th>
-                    <th class="tab">Catégorie</th>
-                    <th class="tab"></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="tab"></td>
-                    <td class="tab"></td>
-                    <td class="tab"></td>
-                    <td class="tab"></td>
-                </tr>
-                <tr>
-                    <form action="" method="get" onsubmit="" id="ajout">
-                        <td>
-                            <div class="ajout">
-                                <input type="text" name="nom" id="nom" required>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="ajout">
-                                <input type="text" name="description" id="des" required>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="ajout">
-                                <input type="check" name="categorie" id="cate" required>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="ajout">
-                                <input type="submit" value="Ajouter">
-                            </div>
-                        </td>
-                    </form>
-                </tr>
-            </tbody>
-        </table>
-    </section>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/ajout_collection.js"></script>
+        <script src="js/afficher_collection.js"></script>
+        <script src="js/catego.js"></script>
+        <script src="js/voirPlus.js"></script>
+        <title>Index</title>
+    </head>
+    <body onload="Categ('categ') ,affichColle('collection') ">
+        <header>
+           <img id="ban" src="/img/banniere.png" alt="Bannière">
+           <h1>Collections disponibles</h1>
+        </header>
+        <section>
+            <table id="collec">
+                <thead>
+                    <tr>
+                        <th class="tab">Nom</th>
+                        <th class="tab">Description</th>
+                        <th class="tab">Catégorie</th>
+                        <th class="tab"></th>
+                    </tr>
+                </thead>
+                <tbody id="collection">
+                </tbody>
 
-
-    <footer>
-        <p>de Sousa Ferreira Nuno</p>
-    </footer>
-</body>
+            </table>
+        </section>
+        <section>
+            <form method="get" onsubmit="return ajout()" id="ajout">
+                <input type="text" name="nom" id="nom" required >
+                <input type="text" name="description" id="des">
+                <select id="categ">
+                </select>
+                <input type="submit" value="Ajouter">
+            </form>
+        </section>
+        <footer>
+            <p><a href=https://github.com/NunoDSF/1T-projet-seconde-sess>Mon github</a>  de Sousa Ferreira Nuno</p>
+        </footer>
+    </body>
 </html>
